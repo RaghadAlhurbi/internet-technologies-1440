@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Laila">
+
+<p id="numb"></p> 
+<script>
+function myFunction() {
+  var x = document.getElementById("numb").value;
+if(x.match(/(05)\d{8}/)){
+alert("Welcome");
+} else {
+alert("The number is incorrect");
+alert("The number should be start with (05) followed by 8 numbers");
+alert("For example 05xxxxxxxx");
+}
+</script>
+
 <style>
 
 .cities {
@@ -131,12 +145,12 @@
 
 <form>
  <fieldset>
-  <legend>Sign Up</legend>
+  <legend><b>Sign Up</b></legend>
   First Name:  <input type="text"><br><br>
   Last Name:   <input type="text"><br><br>
   Email:       <input type="text"><br><br>
   city:        <input type="text"><br><br>
-  Mobile Phone:<input type="text"><br><br>
+  Mobile Phone:<input id="numb"><br><br>
   Date of birth:<input type="text"><br><br>
   Age :        <input type="number"><br><br>
   
@@ -146,8 +160,11 @@
   <label for="female">More than 20</label>
   <input type="radio" name="age" id="20+" value="More than 20"><br>
 </form>
+<br><button onclick="myFunction()">Sign up</button>
  </fieldset>
 </form> 
+
+
 
 <h3>What does mean "Traffic signs"</h3>
 <p>Traffic signs, traffic signs or traffic signs are roadside signs to provide information to road users. With the increasing speed of transport, States have resorted to adopting standardized phonetic signs to facilitate international travel where language differences can hinder understanding of what is meant. The first of these signs was developed in Europe and then adopted in most countries to varying degrees,so you should care for it</p>
